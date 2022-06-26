@@ -28,6 +28,8 @@ public class Main {
         System.out.println(tolstoy.toString());
         System.out.println(warAndPeace.toString());
         System.out.println(warAndPeace.equals(historyOfTheWealthOfNations));
+        System.out.println(warAndPeace.equals(warAndPeace));
+        System.out.println(warAndPeace.equals(historyOfTheWealthOfNations));
         System.out.println();
         System.out.println(warAndPeace.hashCode());
         System.out.println(warAndPeace.hashCode());

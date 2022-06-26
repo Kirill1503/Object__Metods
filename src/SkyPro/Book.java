@@ -26,11 +26,12 @@ import java.util.Objects;
             if (this.getClass() != other.getClass()) {
                 return false;
             }
-
             Book book = (Book) other;
-            return title.equals(book.title);
+            boolean i;
+            i = title.equals(book.title) && yearPublication == book.yearPublication && author.equals(book.author);
+            return i;
         }
         public int hashCode() {
             return Objects.hash(title);
+        }
     }
-}
